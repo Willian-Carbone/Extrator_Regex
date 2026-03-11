@@ -107,7 +107,7 @@ class Extrator {
 
 
             def palavrasSingulares = palavras.findAll { p ->
-                !p.matches(/(?i).*(s|es)\b/)
+                !p.matches(/\b(?i)(?!deus\b).*(s|es)\b/)
             }
 
 
