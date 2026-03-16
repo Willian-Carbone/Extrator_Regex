@@ -74,7 +74,7 @@ class Extrator {
 
     static Map<String, String> classificarPalavras(String trecho) {
         Map<String, String> saida = [:]
-        def regex_plural = (/(?i)/)
+
 
         separar_frases(trecho).each { frase ->
             frase.toLowerCase().split(/\s+/).each { palavra ->
